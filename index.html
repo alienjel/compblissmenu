@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="pics\matcha.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="pics\cb.png">
+    <title>CompBliss</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand-name">
+            <img src="pics\header.png" alt="">
+        </div>
+        <div class="nav-bar-options">
+            <ul>
+                <li id="explore">Explore</li>
+                <li id="aboutUs"><a href="\profile\profile.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h5 id="fullList" onclick="showFullList()">See Full List</h5>
+        <h5>CPU</h5>
+        <p onclick="changeContent1()">AMD Ryzen 9 7950X3D</p>
+        <p onclick="changeContent2()">Intel Core i5-13600K</p>
+        <p onclick="changeContent3()">Intel Core i3-13100F</p>
+        <h5>MOBO</h5>
+        <p onclick="changeContent4()">Gigabyte Z790 Aorus Xtreme</p>
+        <p onclick="changeContent5()">ASRock Z790 Nova Wi-Fi</p>
+        <p onclick="changeContent6()">ASRock Z790 Steel Legend</p>
+        <h5>RAM</h5>
+        <p onclick="changeContent7()">Corsair Dominator Platinum RGB</p>
+        <p onclick="changeContent8()">T-Force Delta RGB DDR5 RAM</p>
+        <p onclick="changeContent9()">Corsair Vengeance DDR5</p>
+        <h5>GPU</h5>
+        <p onclick="changeContent10()">Nvidia GeForce RTX 4070 Super</p>
+        <p onclick="changeContent11()">Radeon RX 7900 XT</p>
+        <p onclick="changeContent12()">GeForce RTX 4060</p>
+        <h5>PSU</h5>
+        <p onclick="changeContent13()">XPG Core Reactor 650W</p>
+        <p onclick="changeContent14()">Corsair CX550F RGB</p>
+        <p onclick="changeContent15()">Corsair CX450</p>
+        <h5>CASE</h5>
+        <p onclick="changeContent16()">Fractal Design North</p>
+        <p onclick="changeContent17()">Lian Li Lancool 207</p>
+        <p id="aLastChild" onclick="changeContent18()">Corsair Obsidian Series 4000X RGB</p>
+    </div>
+      
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <p class="info-text">Show Full List</p>
+    </div>
+
+    <div class="body-container">
+        <div class="box box1">
+            <h3 id="ctitle">Computer Parts Suggestions</h3>
+            <div class="slider-btns">
+                <i class="fas fa-arrow-left" id="prev-btn"></i>
+                <i class="fas fa-arrow-right" id="nxt-btn"></i>
+            </div>
+            <div class="container">
+                <div class="slider">
+                    <div class="slider-item">
+                        <img src="pics\cpu_ryzen9.png" alt="" onclick="changeContent1()">
+                        <div class="suggestions-name">
+                            <h5>AMD Ryzen 9 7950X3D</h5>
+                        </div> 
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\cpu_intel_i5.png" alt="" onclick="changeContent2()">
+                        <div class="suggestions-name">
+                            <h5>Intel Core i5-13600K</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\cpu_intel_i3.png" alt="" onclick="changeContent3()">
+                        <div class="suggestions-name">
+                            <h5>Intel Core i3-13100F</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\mobo_aorus.png" alt="" onclick="changeContent4()">
+                        <div class="suggestions-name">
+                            <h5>Gigabyte Z790 Aorus Xtreme</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\mobo_nova.png" alt="" onclick="changeContent5()">
+                        <div class="suggestions-name">
+                            <h5>ASRock Z790 Nova Wi-Fi</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\mobo_steel.png" alt="" onclick="changeContent6()">
+                        <div class="suggestions-name">
+                            <h5>ASRock Z790 Steel Legend</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\ram_dominator.png" alt="" onclick="changeContent7()">
+                        <div class="suggestions-name">
+                            <h5>Corsair Dominator Platinum RGB</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\ram_delta.png" alt="" onclick="changeContent8()">
+                        <div class="suggestions-name">
+                            <h5>T-Force Delta RGB DDR5 RAM</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="pics\ram_vengeance.png" alt="" onclick="changeContent9()">
+                        <div class="suggestions-name">
+                            <h5>Corsair Vengeance LPX DDR4</h5>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="container">
+                <div class="slider-second">
+                    <div class="slider-item-second">
+                        <img src="pics\gpu_4070.png" alt="" onclick="changeContent10()">
+                        <div class="suggestions-name-second">
+                            <h5>Nvidia GeForce RTX 4070 Super</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\gpu_7900.png" alt="" onclick="changeContent11()">
+                        <div class="suggestions-name-second">
+                            <h5>Radeon RX 7900 XT</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\gpu_4060.png" alt="" onclick="changeContent12()">
+                        <div class="suggestions-name-second">
+                            <h5>GeForce RTX 4060</h5>
+                        </div>
+                    </div><div class="slider-item-second">
+                        <img src="pics\psu_core.png" alt="" onclick="changeContent13()">
+                        <div class="suggestions-name-second">
+                            <h5>XPG Core Reactor 650W</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\psu_cx550f.png" alt="" onclick="changeContent14()">
+                        <div class="suggestions-name-second">
+                            <h5>Corsair CX550F RGB</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\psu_cx450.png" alt="" onclick="changeContent15()">
+                        <div class="suggestions-name-second">
+                            <h5>Corsair CX450</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\case_fractal.png" alt="" onclick="changeContent16()">
+                        <div class="suggestions-name-second">
+                            <h5>Fractal Design North</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\case_lancool.png" alt=""     onclick="changeContent17()">
+                        <div class="suggestions-name-second">
+                            <h5>Lian Li Lancool 207</h5>
+                        </div>
+                    </div>
+                    <div class="slider-item-second">
+                        <img src="pics\case_obsidian.png" alt="" onclick="changeContent18()">
+                        <div class="suggestions-name-second">
+                            <h5>Corsair Obsidian Series 4000X RGB</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="suggestions-list" id="suggestions-list">
+                <div class="suggestions-header">
+                    <p>Ranges from High-End to Low-End List</p>
+                    <!-- <i onclick="show_hide(this)" class="fa fa-arrow-up" id="arrow-up"></i> -->
+                </div>
+                <table id="list">
+                    <tr class="list-header">
+                        <th id="parts">Parts</th>
+                        <th>High-End</th>
+                        <th>Mid-Range</th>
+                        <th>Low-End</th>
+                    </tr>
+                    <tr>
+                        <td class="parts">Central Processing Unit</td>
+                        <td class="brand">AMD Ryzen 9 7950X3D
+                            <div class="alternative">
+                                <h6>alternative: Ryzen 7 5800X3D</h6>
+                            </div>
+                        </td>
+                        <td class="brand">Intel Core i5-13600K
+                            <div class="alternative">
+                                <h6>alternative: Intel Core i9-13900K</h6>
+                            </div>
+                        </td>
+                        <td class="brand">Intel Core i3-13100F
+                            <div class="alternative">
+                                <h6>alternative: AMD Ryzen 5 5600</h6>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parts">Motherboard</td>
+                        <td class="brand">Gigabyte Z790 Aorus Xtreme</td>
+                        <td class="brand">ASRock Z790 Nova Wi-Fi</td>
+                        <td class="brand">ASRock Z790 Steel Legend</td>
+                    </tr>
+                    <tr>
+                        <td class="parts">Random Access Memory (RAM)</td>
+                        <td class="brand">Corsair Dominator Platinum RGB</td>
+                        <td class="brand">T-Force Delta RGB DDR5 RAM</td>
+                        <td class="brand">Corsair Vengeance LPX DDR4</td>
+                    </tr>
+                    <tr>
+                        <td class="parts">Graphics Processing Unit (GPU)</td>
+                        <td class="brand">Radeon RX 7900 XT</td>
+                        <td class="brand">Nvidia GeForce RTX 4070 Super</td>
+                        <td class="brand">GeForce RTX 4060</td>
+                    </tr>
+                    <tr>
+                        <td class="parts">Power Supply Unit</td>
+                        <td class="brand">XPG Core Reactor 650W</td>
+                        <td class="brand">Corsair CX550F RGB</td>
+                        <td class="brand">Corsair CX450</td>
+                    </tr>
+                    <tr>
+                        <td class="parts" id="comp-case">Computer Case</td>
+                        <td class="brand">Fractal Design North</td>
+                        <td class="brand">Lian Li Lancool 207</td>
+                        <td class="brand">Corsair Obsidian Series 4000X RGB</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="parts-contents">
+                <div class="contents">
+                    <div class="contents-item" id="ryzen9">
+                        <div class="contents-img-specs">
+                            <img src="pics\cpu_ryzen9.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Architecture</th>
+                                    <td>Zen4</td>
+                                </tr>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>AM5</td>
+                                </tr>
+                                <tr>
+                                    <th>Cores/Threads</th>
+                                    <td>16/32</td>
+                                </tr>
+                                <tr>
+                                    <th>Base Frequency</th>
+                                    <td>4.2 GHz</td>
+                                </tr>
+                                <tr>
+                                    <th>Top Boost Frequency</th>
+                                    <td>5.7 GHz</td>
+                                </tr>
+                                <tr>
+                                    <th>TDP</th>
+                                    <td>120W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>AMD Ryzen 9 7950X3D</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>AMD’s $465 (a Prime Day special), the typically $600 Ryzen 9 7950X3D is geared specifically for gamers looking to blast through CPU-limited games while still having the threaded heft of 16 cores that can handle the heaviest of productivity workloads. The new chip comes packing sixteen Zen 4 cores and the company’s second-gen 3D V-Cache tech that unlocks 128MB of L3 cache, a combo that delivers the fastest gaming performance available from a flagship chip. In our tests, the 7950X3D beats Intel’s fastest chip, the $647 6.2 GHz Core i9-14900KS, by 10% on average and up to 40%+ in some games. <br>
+                        The 7950X3D uses AMD’s cutting-edge 3D chip-stacking technology, 3D V-Cache, to enable an incredible 128MB L3 cache. Like AMD’s inaugural X3D chip, the Zen 3 Ryzen 7 5800X3D, the extra L3 cache comes courtesy of a 3D-stacked SRAM chiplet fused atop the processor with hybrid bonding, which accelerates gaming to new heights in many titles. AMD also has a new thread-targeting technique designed to help apply the gains more evenly across various games.</p>
+                    </div>
+                    <div class="contents-item" id="inteli5">
+                        <div class="contents-img-specs">
+                            <img src="pics\cpu_intel_i5.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Architecture</th>
+                                    <td>Alder Lake</td>
+                                </tr>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>LGA 1700</td>
+                                </tr>
+                                <tr>
+                                    <th>Cores/Threads</th>
+                                    <td>10 (6P + 8E) / 20</td>
+                                </tr>
+                                <tr>
+                                    <th>Base Frequency</th>
+                                    <td>3.5</td>
+                                </tr>
+                                <tr>
+                                    <th>Top Boost Frequency</th>
+                                    <td>5.1</td>
+                                </tr>
+                                <tr>
+                                    <th>TDP</th>
+                                    <td>125W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Intel Core i5-13600K</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Our in-depth testing shows that the $247 Core i5-13600K is a stellar gaming chip —  the stock 13600K beats AMD's entire standard Ryzen 7000 lineup (but not the X3D chips) at 1080p — even the $590 model. You can also sacrifice the integrated graphics engine — you won't need it if you have a discrete GPU — and go with the $222 Core i5-13600KF and get the same level of performance. Intel has since released the newer $305 Core i5-14600K refresh, but it offers virtually the same performance in gaming as the Core i5-13600K, but for $58 more. That leaves the Core i5-13600K as the better option. <br>
+                        And the 13600K/F delivers plenty of performance — overclocking even propels it to the same level as the Ryzen 7 5800X3D, an impressive feat, and it also lands within ~5% of the $449 Core i9-13900K.</p>
+                    </div>
+                    <div class="contents-item" id="inteli3">
+                        <div class="contents-img-specs">
+                            <img src="pics\cpu_intel_i3.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Architecture</th>
+                                    <td>Raptor Lake</td>
+                                </tr>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>LGA 1700</td>
+                                </tr>
+                                <tr>
+                                    <th>Cores/Threads</th>
+                                    <td>4 (4P + 0E) / 8</td>
+                                </tr>
+                                <tr>
+                                    <th>Base Frequency</th>
+                                    <td>3.4</td>
+                                </tr>
+                                <tr>
+                                    <th>Top Boost Frequency</th>
+                                    <td>4.5</td>
+                                </tr>
+                                <tr>
+                                    <th>TDP</th>
+                                    <td>60W / 89W</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Intel Core i3-13100F</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>The $117 Core i3-13100F comes to market using the same winning formula that propelled the previous-gen Core i3-12100F to the top of our recommendations for budget systems, making it a shoo-in for the best budget CPU in its price class. This chip delivers exceptional gaming performance along with good enough performance in productivity applications, given its price point. Notably, you can often find the previous-gen Core i3-12100F at similar or lower pricing, and given that the two chips offer essentially the same level of performance, we recommend that you simply select whichever model costs less at the time. <br>
+                        The Core i3-13100 has six p-cores and 12 threads operating at a 3.4 GHz base and 4.5 GHz boost clock rate. However, unlike the Core i5 models, it doesn't have e-cores for background tasks. It also has 12 MB of L3 cache.</p>
+                    </div>
+                    <div class="contents-item" id="aorus">
+                        <div class="contents-img-specs">
+                            <img src="pics\mobo_aorus.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>LGA 1700</td>
+                                </tr>
+                                <tr>
+                                    <th>Chipset</th>
+                                    <td>Intel Z790</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>E-ATX</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage Regulator</th>
+                                    <td>23 Phases</td>
+                                </tr>
+                                <tr>
+                                    <th>PCIe x16</th>
+                                    <td>(1) v5.0, (2) v3.0 (x4, x1)</td>
+                                </tr>
+                                <tr>
+                                    <th>USB Ports</th>
+                                    <td>(2) Thunderbolt 4 Type-C (40 Gbps) (10) USB 3.2 Gen 2 (10 Gbps)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Gigabyte Z790 Aorus Xtreme</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>All the flagship-class Z790 motherboards offer the best of the best in terms of features and specifications, but the Gigabyte Z790 Aorus Extreme presents the best value among these top-end board. You’ll lose a couple M.2 sockets over the more-expensive flagship boards, but this bird otherwise has everything else you could ask for and more, while costing between $200 and $400 less than the competition. <br>
+                        The Z790 Aorus Extreme delivers 10 Gb Ethernet, 40 Gbps Thunderbolt 4 ports, flagship-class audio, PCIe 5.0  GPU and M.2 support, overkill power delivery, and that high-end appearance you expect from a high-end board. MSI's Z790 Godlike offers up a few more features (like seven M.2 sockets), but costs $400 more, and it's also physically bigger, making it hard to recommend to most people unless money is no object.</p>
+                    </div>
+                    <div class="contents-item" id="nova">
+                        <div class="contents-img-specs">
+                            <img src="pics\mobo_nova.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>LGA 1700</td>
+                                </tr>
+                                <tr>
+                                    <th>Chipset</th>
+                                    <td>Intel Z790</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>ATX</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage Regulator</th>
+                                    <td>22 Phase (20x 90A SPS MOSFETs for Vcore)</td>
+                                </tr>
+                                <tr>
+                                    <th>PCIe x16</th>
+                                    <td>(1) v5.0 (x16), (1) v4.0 (x4)</td>
+                                </tr>
+                                <tr>
+                                    <th>USB Ports</th>
+                                    <td>(1) USB 3.2 Gen 2x2 Type-C (20 Gbps) Type-C (4) USB 3.2 Gen 2 (10 Gbps), Type-A, (3) USB 3.2 Gen 1 (5 Gbps), (2) USB 2.0 Gen (480 Mbps)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>ASRock Z790 Nova Wi-Fi</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Unlike most refresh boards for Intel's 14th Gen Core, the ASRock Z790 Nova Wi-Fi is is a completely new SKU that delivers the best of what Intel's platform has to offer, and it does so at a quite reasonable price. For between $290 and $330, ASRock gets you the basics from the refresh, native 14th-gen support, and integrated Wi-Fi 7, and it's great for users who plan to use a lot of M.2 storage.<br>
+                        The black base, with purple and blue accents fits most design themes, and the integrated RGBs are bright enough to show off the board and the inside of your chassis. Performance was good across our benchmarking suite, so you can get the most out of any compatible processor, so long as you have the cooling to support it.</p>
+                    </div>
+                    <div class="contents-item" id="steel">
+                        <div class="contents-img-specs">
+                            <img src="pics\mobo_steel.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Socket</th>
+                                    <td>LGA 1700</td>
+                                </tr>
+                                <tr>
+                                    <th>Chipset</th>
+                                    <td>Intel Z790</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>ATX</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage Regulator</th>
+                                    <td>18 Phase (16x 60A SPS MOSFETs for Vcore)</td>
+                                </tr>
+                                <tr>
+                                    <th>PCIe x16</th>
+                                    <td>(1) v5.0 (x16), (1) v4.0 (x4), (1) v3.0</td>
+                                </tr>
+                                <tr>
+                                    <th>USB Ports</th>
+                                    <td>(1) USB 3.2 Gen 1 (10 Gbps), Type-C, (1) USB 3.2 Gen 1 (10 Gbps), (8) USB 3.2 Gen 1 (5 Gbps)
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>ASRock Z790 Steel Legend</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>The Z790 Steel Legend is a great choice for users on a budget who want the flexibility of Intel's overclockable platform, but who don’t want to spend several hundred dollars to get there. Along with its black-on-silver looks and bright RGB lighting, you get all the platform offers, including a PCIe 5.0 slot and M.2 socket (and five total M.2), eight SATA ports, front-panel 20 Gbps USB Type-C, integrated Wi-Fi 6E, a basic audio codec, the eDP port for an additional monitor, and power delivery capable of handling our flagship-class processor at stock or while overclocked.</p>
+                    </div>
+                    <div class="contents-item" id="dominator">
+                        <div class="contents-img-specs">
+                            <img src="pics\ram_dominator.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Capacity</th>
+                                    <td>32GB (16x2)</td>
+                                </tr>
+                                <tr>
+                                    <th>Speeds</th>
+                                    <td>38-38-38-84</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage</th>
+                                    <td>1.25v</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Corsair Dominator Platinum RGB</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>If you're after high-end gaming RAM performance for your Intel 12th gen-enabled rig then the Corsair Dominator Platinum RGB DDR5-5200 offers all the performance speed that you need. With the potential of PCIe 5.0 just now being understood and unlocked by the newest Intel CPUs, you'll be in a very good place for the future of PC gaming as an early adopter in 2022 with this memory kit configuration.</p>
+                    </div>
+                    <div class="contents-item" id="delta">
+                        <div class="contents-img-specs">
+                            <img src="pics\ram_delta.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Capacity</th>
+                                    <td>8, 16, 32, 48, 64, 96GB</td>
+                                </tr>
+                                <tr>
+                                    <th>Speeds</th>
+                                    <td>5200, 5600, 6000 , 6200, 6400, 6600, 6800, 7000, 7200, 7600, 7800, 80000MHzs</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage</th>
+                                    <td>1.10V (typical)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>T-Force Delta RGB DDR5 RAM</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Teamgroup's T-Force RAM can often be seen in the discount aisles of online retailers when big sales events are running. Often, it can be found on offer outside of those sales like Black Friday and Prime Day, meaning it's competitively priced the majority of the time. That isn't indicative of its quality though, because T-Force Delta RGB DDR5 looks as good, and performs as well as the rivals you'll find up and down this list.</p>
+                    </div>
+                    <div class="contents-item" id="vengeance">
+                        <div class="contents-img-specs">
+                            <img src="pics\ram_vengeance.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Capacity</th>
+                                    <td>8, 16, 32, 64, 128, 256GB</td>
+                                </tr>
+                                <tr>
+                                    <th>Speeds</th>
+                                    <td>2133, 2400, 2666, 3000, 3200, 3600, 4000 MHz</td>
+                                </tr>
+                                <tr>
+                                    <th>Voltage</th>
+                                    <td>Unknown</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Corsair Vengeance LPX DDR4</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>DDR4 RAM from the biggest names in digital storage is actually getting a little harder to find as they ramp up production of DDR5 RAM. Because of that, sometimes replacing your PC's memory with DDR4 can actually be more expensive, if not just as pricey as buying newer DDR5. Luckily, Corsair's Vengeance LPX is a holdout, and you can still find it fairly easily at pretty reasonable prices.</p>
+                    </div>
+                    <div class="contents-item" id="4070">
+                        <div class="contents-img-specs">
+                            <img src="pics\gpu_4070.png" alt="">
+                            <table id="specs">
+                            <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>GPU</th>
+                                    <td>AD104</td>
+                                </tr>
+                                <tr>
+                                    <th>GPU Cores</th>
+                                    <td>7168</td>
+                                </tr>
+                                <tr>
+                                    <th>Boost Clock</th>
+                                    <td>2,475 MHz</td>
+                                </tr>
+                                <tr>
+                                    <th>Video RAM</th>
+                                    <td>12GB GDDR6X 21 Gbps</td>
+                                </tr>
+                                <tr>
+                                    <th>TGP</th>
+                                    <td> 200 watts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Nvidia GeForce RTX 4070 Super</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Nvidia refreshed its 40-series lineup at the start of 2024 with the new Super models. Of the three, the RTX 4070 Super will likely interest be of interest to the most people. It inherits the same $599 MSRP as the non-Super 4070 (which has dropped to $549 to keep it relevant), with all the latest features of the Nvidia Ada Lovelace architecture. It's slightly better than a linear boost in performance relative to price, which is as good as you can hope for these days.</p>
+                    </div>
+                    <div class="contents-item" id="7900">
+                        <div class="contents-img-specs">
+                            <img src="pics\gpu_7900.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>GPU</th>
+                                    <td>RDNA 3 Navi 31</td>
+                                </tr>
+                                <tr>
+                                    <th>GPU Cores</th>
+                                    <td>5376 (10,752)</td>
+                                </tr>
+                                <tr>
+                                    <th>Boost Clock</th>
+                                    <td>2,400 MHz</td>
+                                </tr>
+                                <tr>
+                                    <th>Video RAM</th>
+                                    <td>20GB GDDR6 20 Gbps</td>
+                                </tr>
+                                <tr>
+                                    <th>TGP</th>
+                                    <td>315 watts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>AMD Radeon RX 7900 XT</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>With prices now heading up on many previous generation cards, AMD's RX 7900 XT has become more attractive with time. It generally beats the RTX 4070 Ti in rasterization performance but trails by quite a bit in ray tracing games — with both cards now starting at around $699. That brings some good competition from AMD, with all the RDNA 3 architectural updates. <br>
+                        AMD also doesn't skimp on VRAM, providing you with 20GB. That's 67% more than the competing 4070 Ti. However, you won't get DLSS support, and FSR2 works on Nvidia as well as AMD, so it's not really an advantage (plus DLSS still looks better). Some refuse to use upscaling of any form, however, so the importance of DLSS and FSR2 can be debated.</p>
+                    </div>
+                    <div class="contents-item" id="4060">
+                        <div class="contents-img-specs">
+                            <img src="pics\gpu_4060.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>GPU</th>
+                                    <td>Ada AD107</td>
+                                </tr>
+                                <tr>
+                                    <th>GPU Cores</th>
+                                    <td>3072</td>
+                                </tr>
+                                <tr>
+                                    <th>Boost Clock</th>
+                                    <td>2,460 MHz</td>
+                                </tr>
+                                <tr>
+                                    <th>Video RAM</th>
+                                    <td>8GB GDDR6 17 Gbps</td>
+                                </tr>
+                                <tr>
+                                    <th>TGP</th>
+                                    <td>115 watts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h4>Nvidia GeForce RTX 4060</h4>
+                        <br>
+                        <h4>Description</h4>
+                        <p>With the launch of the RTX 4060, Nvidia appears to have gone as low as it plans for this generation of desktop graphics cards based on the Ada Lovelace architecture. We're not ruling out an eventual desktop RTX 4050, but we're also skeptical such a card would warrant consideration, considering how pared down the 4060 is already. <br>
+                        There are certainly drawbacks with this level of GPU. Nvidia opted to cut down the memory interface to just 128 bits, which in turn limits the memory capacity options. Nvidia could do a 16GB card if it really wanted, but 8GB is the standard configuration and we don't expect anything else — outside of its professional GPUs, only the 4060 Ti 16GB has the doubled VRAM option, and we weren't particularly impressed by that card. The 4060-class cards also have an x8 PCIe interface, which shouldn't matter too much, though it might reduce performance if you're on an older platform that only supports PCIe 3.0</p>
+                    </div>
+                    <div class="contents-item" id="core">
+                        <div class="contents-img-specs">
+                            <img src="pics\psu_core.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Manufacturer(OEM)</th>
+                                    <td>CWT</td>
+                                </tr>
+                                <tr>
+                                    <th>Max. DC Output</th>
+                                    <td>650W</td>
+                                </tr>
+                                <tr>
+                                    <th>Efficiency</th>
+                                    <td>80 PLUS Gold, ETA-A (88-91%)</td>
+                                </tr>
+                                <tr>
+                                    <th>Cooling</th>
+                                    <td>120mm Fluid Dynamic Bearing Fan (HA1225H12F-Z)</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>ATX12V v2.52, EPS 2.92</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>XPG Core Reactor 650W</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>XPG entered the PSU market with the Core Reactor line, which uses a high-end CWT platform. The smallest member of the line meets eye-to-eye formidable opponents like the Corsair RM650x, the Asus ROG Strix 650 and the Seasonic Focus Plus Gold with similar capacity, and manages to take the performance lead. The only PSU that achieves higher overall performance is the EVGA SuperNOVA 650 G3, which will be fully replaced by the inferior G5 line.</p>
+                    </div>
+                    <div class="contents-item" id="cx550f">
+                        <div class="contents-img-specs">
+                            <img src="pics\psu_cx550f.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Manufacturer(OEM)</th>
+                                    <td>HEC</td>
+                                </tr>
+                                <tr>
+                                    <th>Max. DC Output</th>
+                                    <td>550W</td>
+                                </tr>
+                                <tr>
+                                    <th>Efficiency</th>
+                                    <td>80 PLUS Bronze, Cybenetics Gold (87-89%)</td>
+                                </tr>
+                                <tr>
+                                    <th>Cooling</th>
+                                    <td>120mm Rifle Bearing Fan (NR120L)</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>ATX12V v2.4, EPS 2.92</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Corsair CX550F RGB</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>The CX550F is among the best mid-level PSUs featuring RGB lighting. Corsair teamed with HEC for its CX-F line, and it used a modern platform including a quality fan with advanced RGB lighting, meaning that the production costs increased; hence, the CX550F costs more than the category's average. Nonetheless, besides the eye-candy features, the unit also offers good performance and is not noisy under normal operating conditions.</p>
+                    </div>
+                    <div class="contents-item" id="cx450">
+                        <div class="contents-img-specs">
+                            <img src="pics\psu_cx450.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Manufacturer(OEM)</th>
+                                    <td>CWT (RPS0053), Great Wall (RPS0063)</td>
+                                </tr>
+                                <tr>
+                                    <th>Max. DC Output</th>
+                                    <td>450W</td>
+                                </tr>
+                                <tr>
+                                    <th>Efficiency</th>
+                                    <td>CWT (RPS0053): 80 PLUS Bronze, ETA-S (82-85%)Great Wall (RPS0063): 80 PLUS Bronze, ETA-A- (85-88%)</td>
+                                </tr>
+                                <tr>
+                                    <th>Cooling</th>
+                                    <td>CWT (RPS0053): 120mm rifle bearing fan (HA1225M12F-Z)Great Wall (RPS0063): 120mm rifle bearing fan (D12SM-12)</td>
+                                </tr>
+                                <tr>
+                                    <th>Form Factor</th>
+                                    <td>ATX12V v2.4, EPS 2.92</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Corsair CX450</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Corsair's budget-oriented CX450 is unique in that it's manufactured by two different OEMs--Great Wall and Channel Well Technology (CWT)--each of which uses a distinct platform. The only way to tell them apart is by their RPS numbers, reference designators given to each model. Both configurations share the CX450's principal weakness: fixed cables. However, they both utilize modern platforms featuring LLC resonant converters and voltage regulation modules, along with high-quality fans.</p>
+                    </div>
+                    <div class="contents-item" id="fractal">
+                        <div class="contents-img-specs">
+                            <img src="pics\case_fractal.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Type</th>
+                                    <td>Mid Tower</td>
+                                </tr>
+                                <tr>
+                                    <th>Motherboard Support</th>
+                                    <td>Mini-ITX, Micro-ATX, ATX</td>
+                                </tr>
+                                <tr>
+                                    <th>Card Length Supported</th>
+                                    <td>356mm (14 inches)</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage Support</th>
+                                    <td>(2) 3.5 inches, (6) 2.5 inches</td>
+                                </tr>
+                                <tr>
+                                    <th>Included Fans</th>
+                                    <td>(2) 140mm PWM</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Fractal Design North</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>We aren't sure who asked for a PC case that mixed mid-century modern design (wooden slats and all) and high airflow, but we sure are glad that Fractal Design answered with the excellent North mid-tower. Available with either a mesh side (as we tested) or tempered glass, and in white with chrome accents on the IO and feet, or black with some seriously pretty brass, this is arguably the prettiest PC case ever produced, period. <br>
+                        And thanks to its pair of 140mm fans and an included side bracket (for the mesh model) that can hold another pair of 140mm fans (not included), the North has excellent thermals as well. Just note that it can get noisy when delivering those temps. The glass side panel may help a bit on the noise front, but likely at the cost of at least some thermal performance.</p>
+                    </div>
+                    <div class="contents-item" id="lancool">
+                        <div class="contents-img-specs">
+                            <img src="pics\case_lancool.png" alt="">
+                            <table id="specs">
+                                <caption id="content-specs">Specifications</caption>
+                                <tr>
+                                    <th>Type</th>
+                                    <td>Mid Tower</td>
+                                </tr>
+                                <tr>
+                                    <th>Motherboard Support</th>
+                                    <td>ATX (width up to 244mm), Mini-ITX, Micro ATX</td>
+                                </tr>
+                                <tr>
+                                    <th>Card Length Supported</th>
+                                    <td>14.76 inches</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage Support</th>
+                                    <td>(2) 3.5-inch or (2) 2.5-inch</td>
+                                </tr>
+                                <tr>
+                                    <th>Included Fans</th>
+                                    <td>(2) 140mm ARGB, (2) 120mm</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Lian Li Lancool 207</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Lian Li's Lancool 207 ATX PC case delivers a lot, including some unique features, for just $80 – or $85 if you want the white model. It ships with four fans (two RGB and two uniquely blowing directly on your GPU) and a whole lot of mesh, so airflow shouldn't be a concern. There's also space for large graphics cards and a pair of  SATA drives, which should be enough for most of us in this modern M.2 world. Cable routing is also well-designed, making building and cleaning up the interior easier.</p>
+                    </div>
+                    <div class="contents-item" id="obsidian">
+                        <div class="contents-img-specs">
+                        <img src="pics\case_obsidian.png" alt="">
+                        <table id="specs">
+                            <caption id="content-specs">Specifications</caption>
+                            <tr>
+                                <th>Type</th>
+                                <td>Mid Tower</td>
+                            </tr>
+                            <tr>
+                                <th>Motherboard Support</th>
+                                <td>Mini-ITX, Micro-ATX, ATX</td>
+                            </tr>
+                            <tr>
+                                <th>Card Length Supported</th>
+                                <td>360mm (14.2 inches)</td>
+                            </tr>
+                            <tr>
+                                <th>Storage Support</th>
+                                <td>(2) 3.5” (2) 2.5”</td>
+                            </tr>
+                            <tr>
+                                <th>Included Fans</th>
+                                <td>(3) 120mm ARGB</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <h3>Corsair Obsidian Series 4000X RGB</h3>
+                        <br>
+                        <h4>Description</h4>
+                        <p>Corsair’s 4000X RGB is a sleek gaming tower that comes with two glass panels and three RGB spinners. Priced at about $135 now, it’s not cheap, but its design is thoroughly considered and as you build with it, it’s clear where Corsair’s gaming and PC building pedigree comes from. Indeed, the 4000X RGB (as well as the similar 4000D airflow), is an extremely easy and convenient chassis to build a system in, and everything just makes sense.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="menu.js"></script>
+</body>
+</html>
